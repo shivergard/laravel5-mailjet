@@ -322,7 +322,7 @@ class Mailjet
         }
         else
         {
-            $this->_response = json_decode($buffer, false, 512, JSON_BIGINT_AS_STRING);
+            $this->_response = json_decode($buffer, false, 512);
         }
 
         if ($request == 'POST') {
